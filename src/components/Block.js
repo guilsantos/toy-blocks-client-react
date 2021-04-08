@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core";
 
 const Blocks = ({
@@ -42,5 +43,9 @@ const useStyles = makeStyles(() => ({
   },
   body: {},
 }));
+
+Blocks.propTypes = {
+  node: PropTypes.object.isRequired,
+};
 
 export default Blocks;
